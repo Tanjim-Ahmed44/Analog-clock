@@ -1,0 +1,136 @@
+body{
+  text-align: center;
+}
+.clock{
+  height: 500px;
+  width: 500px;
+  background-color:#2d3436;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 20px;
+  border: 30px solid #b2bec3;
+  color: white;
+  
+
+}
+.sec{
+  height: 250px;
+  width: 10px;
+  background-color:#ffeaa7;
+  z-index:3;
+  left: 240px;
+  animation: sec_anim 60s linear infinite;
+  left: 245px;
+    border-top-left-radius: 100%;
+
+}
+.min{
+  height: 250px;
+  width: 10px;
+  background-color:#00a8ff;
+  z-index:2;
+  left: 240px;
+  top: -250px;
+  animation: min_anim 600s linear infinite;
+  border-top-left-radius: 100%;
+    
+
+}
+.hour{
+  height: 200px;
+  width: 15px;
+  background-color:#44bd32;
+  z-index:0;
+  left:243px;
+  top: -450px;
+   animation: hour_anim 3000s linear infinite;
+   border-top-left-radius: 100%;
+  
+
+
+}
+.sec,.min,.hour{
+  line-height: 45px;
+  position: relative;
+  transform-origin:bottom;
+  
+}
+@keyframes sec_anim{
+  from{transform: rotateZ(0deg);}
+  to{transform: rotateZ(360deg);}
+}
+
+@keyframes min_anim {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes hour_anim {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.ten,.eleven,.twelve{
+  font-size: 50px;
+  font-family: 'Dancing Script',
+  cursive;
+  font-weight: bold;
+  position: relative;
+}
+.one{
+  top:-690px;
+  left: 120px;
+}
+.two {
+  top: -665px;
+  left: 205px;
+}
+.three {
+  top: -610px;
+  left: 240px;
+}
+.four{
+  top: -550px;
+  left: 220px;
+}
+.five{
+  top: -520px;
+  left: 135px;
+}
+.six{
+  top: -545px;
+  left: 20px;
+}
+.seven{
+  top: -630px;
+  left: -100px;
+}
+.eight{
+  top: -770px;
+  left: -200px;
+}
+.nine{
+  top: -950px;
+  left: -245px;
+}
+.ten{
+  top: -1140px;
+  left: -200px;
+}
+.eleven{
+  top: -1290px;
+  left: -120px;
+}
+.twelve{
+  top: -1380px;
+  left: -0px;
+}
+
